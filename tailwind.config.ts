@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 export default {
   darkMode: ["class"],
   content: [
@@ -107,8 +108,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        pattern: "url('../app/images/pattern.webp')",
+        pattern: "url('/images/pattern.webp')",
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

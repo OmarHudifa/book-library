@@ -1,5 +1,7 @@
-@import 'tailwindcss';
-@plugin 'tailwindcss-animate';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 
 @layer base {
@@ -29,11 +31,11 @@
 
 @layer components {
   .form-btn {
-    @apply bg-primary text-dark-100 hover:bg-primary inline-flex min-h-14 w-full items-center justify-center rounded-md px-6 py-2 font-bold text-base  ;
+    @apply bg-primary text-dark-100 hover:bg-primary inline-flex min-h-14 w-full items-center justify-center rounded-md px-6 py-2 font-bold text-base !important;
   }
 
   .form-input {
-    @apply w-full min-h-14 border-none text-base font-bold placeholder:font-normal text-white placeholder:text-light-100 focus-visible:ring-0 focus-visible:shadow-none bg-dark-300  ;
+    @apply w-full min-h-14 border-none text-base font-bold placeholder:font-normal text-white placeholder:text-light-100 focus-visible:ring-0 focus-visible:shadow-none bg-dark-300 !important;
   }
 
   /* Book Card */
@@ -118,12 +120,12 @@
   }
 
   .book-overview_btn {
-    @apply mt-4 min-h-14 w-fit bg-primary text-dark-100 hover:bg-primary/90 max-md:w-full  ;
+    @apply mt-4 min-h-14 w-fit bg-primary text-dark-100 hover:bg-primary/90 max-md:w-full !important;
   }
 
   /* File Upload */
   .upload-btn {
-    @apply flex min-h-14 w-full items-center justify-center gap-1.5 rounded-md ;
+    @apply flex min-h-14 w-full items-center justify-center gap-1.5 rounded-md;
   }
 
   .upload-filename {
@@ -140,12 +142,12 @@
   }
 
   .search-input {
-    @apply w-full border-none font-bold placeholder:font-normal text-white placeholder:text-light-100 focus-visible:ring-0 focus-visible:shadow-none  ;
+    @apply w-full border-none font-bold placeholder:font-normal text-white placeholder:text-light-100 focus-visible:ring-0 focus-visible:shadow-none !important;
   }
 
   /* Book Receipt */
   .book-receipt_admin-btn {
-    @apply bg-light-300 rounded-md text-primary-admin font-semibold hover:bg-light-300/80  ;
+    @apply bg-light-300 rounded-md text-primary-admin font-semibold hover:bg-light-300/80 !important;
   }
 
   /* Book Ticket */
@@ -191,7 +193,7 @@
   }
 
   .not-found-btn {
-    @apply bg-primary font-bebas-neue min-w-[360px] mt-6 text-dark-100 text-xl hover:bg-primary/90 min-h-12  ;
+    @apply bg-primary font-bebas-neue min-w-[360px] mt-6 text-dark-100 text-xl hover:bg-primary/90 min-h-12 !important;
   }
 
   /* Pagination */
@@ -200,11 +202,11 @@
   }
 
   .pagination-btn_light {
-    @apply bg-light-300 text-dark-300 hover:bg-light-300/70  ;
+    @apply bg-light-300 text-dark-300 hover:bg-light-300/70 !important;
   }
 
   .pagination-btn_dark {
-    @apply bg-dark-300 hover:bg-dark-100  ;
+    @apply bg-dark-300 hover:bg-dark-100 !important;
   }
 
   #pagination p {
@@ -213,15 +215,15 @@
 
   /* Sort */
   .select-trigger {
-    @apply w-40 h-10 px-4 bg-dark-300 text-light-100 border-dark-100  ;
+    @apply w-40 h-10 px-4 bg-dark-300 text-light-100 border-dark-100 !important;
   }
 
   .select-content {
-    @apply bg-dark-300 text-light-100 border-dark-100  ;
+    @apply bg-dark-300 text-light-100 border-dark-100 !important;
   }
 
   .select-item {
-    @apply focus:bg-dark-600 focus:text-light-100  ;
+    @apply focus:bg-dark-600 focus:text-light-100 !important;
   }
 }
 
